@@ -164,7 +164,7 @@ h3 {
     color: #F4CBB2;
 }
 
-.project, .contact {
+.project {
     margin-top: 5rem;
     height: 80vh;
 }
@@ -173,6 +173,7 @@ footer {
     background: rgb(19, 36, 65);
     padding: 5rem 0 2rem;
     text-align: center;
+    margin-top: 5rem;
 }
 footer .fab {
     font-size: 2.3rem;
@@ -185,4 +186,63 @@ footer a {
 
 footer a:not(:last-child){
     margin-right: 2rem;
+}
+
+
+
+/* contact page */
+
+.contact {
+    margin: 0 2.5rem;
+}
+
+.contact p {
+    text-align: center;
+    margin-top: 1rem;
+    color: #41415A;
+}
+form {
+    margin-top: 25px;
+    max-width: 450px;
+    color: #41415A;
+    background: #cecece;
+    padding: 35px 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.34);
+}
+@media screen and (max-width:575px) {
+    
+    form {
+        margin: 25px auto;
+        max-width: 95%;
+    }
+}
+label {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact button {
+    margin-left: auto;
+    display: block;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    font-size: 16px;
+    background: #41415A;
+    border: 1px solid #41415A;
+    color: #fff;
+}
+
+.contact button:hover {
+    background: #2a2a3b;
+    
 }
