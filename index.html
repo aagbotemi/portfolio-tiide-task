@@ -15,6 +15,8 @@
 </head>
 <body>
     <header>
+        <!-- NAVBAR ENDS HERE, KEPT AT THE BOTTOM OG THE HEADER 
+        WITH BOTTOM POSITIONING -->
         <nav>
             <!-- <div class='navbar-brand'>GB</div> -->
 
@@ -25,17 +27,21 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <!-- NAVBAR ENDS HERE-->
 
+        <!-- HERO STARTS HERE -->
         <section class="hero">
             <h2>Hello, I'm <span>Abiodun Awoyemi</span></h2>
             <p>I'm a software Engineer</p>
             <button>View my work <i class="fas fa-arrow-right"></i></button>
         </section>
+        <!-- HERO ENDS HERE -->
     </header>
     <main>
+        <!-- ABOUT SECTION STARTS HERE-->
         <section class="about">
-            <h2>About Me</h2>
-            <div class="underline"></div>
+            <h3>About Me 
+                <div class="underline"></div></h3>
 
             <p>I'm a frontend software developer. I'm passionate about making the web accessible to everyone and I enjoy solving complex problems using web technologies as I provide top notch solution that helps to solve human problem.</p>
             <p>I am a passionate and goal-driven frontend developer looking for an opportunity to apply my highly refined programming skills to help real-life businesses. I am team oriented and get along with others when working in a group setting. I also have the ability to work independently while staying on schedule and meeting those tight deadlines.</p>
@@ -51,6 +57,43 @@
                 <li><i class="fab fa-git"></i></li>
             </ul>
         </section>
+        <!-- ABOUT SECTION ENDS HERE-->
+
+        <section class="project">
+            <h3>Projects
+                <div class="underline"></div></h3>
+            <!-- PROJECT WILL BE HERE-->
+        </section>
+
+
+        <section class="contact">
+            <h3>Contact Me
+                <div class="underline"></div></h3>
+
+             <!-- CONTACT FORM WILL BE HERE-->
+        </section>
+
     </main>
+
+    <!-- FOOTER STARTS HERE-->
+    <footer>
+        <div class="media-link">
+            <a href="https://github.com/aagbotemi"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abiodun-awoyemi-1ab8b3165/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/_abiodunAwoyemi"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright mt-5 text-center">
+            Copyright &copy <span id='year'></span>. Abiodun AWOYEMI.
+        </p>
+    </footer>
+    <!-- FOOTER ENDS HERE-->
+
+
+    <script lang="js">
+        // simple JavaScript to set the year
+        const fullYear = document.getElementById('year')
+        const date = new Date()
+        fullYear.innerHTML = date.getFullYear()
+    </script>
 </body>
 </html>

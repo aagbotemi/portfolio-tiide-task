@@ -98,15 +98,20 @@ nav ul li a:hover {
     margin: 3rem 2.5rem;
 }
 
-.about .underline {
+.underline {
     width: 6rem;
     margin: auto;
     height: 3px;
     background: #41415A;
     transform: translateX(-30%);
 }
+h3:hover .underline {
+    width:9.5rem;
 
-.about h2 {
+    transform: translateX(0%);
+    background: #04C2C9;
+}
+h3 {
     font-size: 2.5rem;
     text-align: center;
     color: #414141;
@@ -157,4 +162,27 @@ nav ul li a:hover {
 
 .about ul li .fa-github {
     color: #F4CBB2;
+}
+
+.project, .contact {
+    margin-top: 5rem;
+    height: 80vh;
+}
+
+footer {
+    background: rgb(19, 36, 65);
+    padding: 5rem 0 2rem;
+    text-align: center;
+}
+footer .fab {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+footer a {
+    background-color: #41415A;
+    padding: 1.3rem 1rem;
+}
+
+footer a:not(:last-child){
+    margin-right: 2rem;
 }
