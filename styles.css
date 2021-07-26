@@ -54,12 +54,78 @@ a {
 }
   
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #41415A; /* Add a dark-grey background on hover */
     transform: rotate(45deg);
 }
 
 #myBtn:hover .fa-arrow-up {
     transform: rotate(-45deg);
+}
+
+
+
+
+.ham {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+    z-index: 1000 !important;
+}
+
+.xIcon {
+    display: none;
+}
+  
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(19, 36, 65);
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+  
+.ham li {
+    padding: 1rem 0;
+}
+
+.menu li {
+
+    display: flex;
+    justify-content: center;
+}
+
+.menuLink {
+    display: inline;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+  
+.menuLink:hover {
+    text-decoration: underline;
+}
+
+.fa-bars .fa-times {
+    margin-right: 10px;
+    font-size: 22px !important;
 }
 
 header {
@@ -68,6 +134,7 @@ header {
 
 
 nav {
+    display: none;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -76,6 +143,14 @@ nav {
     background: rgb(19, 36, 65);
     padding: 24px;
     border-bottom: 3px solid #04c2c9;
+}
+@media screen and (min-width: 800px){
+    .ham {
+        display: none;
+    }
+    nav {
+        display: block  !important;
+    }
 }
 
 nav ul {
@@ -291,6 +366,6 @@ input, textarea {
 }
 
 .contact button:hover {
-    background: #2a2a3b;
+    background: #333361;
     
 }

@@ -1,3 +1,30 @@
+// HAMBUEGER MENU
+var menu = document.querySelector(".menu");
+var ham = document.querySelector(".ham");
+var xIcon = document.querySelector(".xIcon");
+var menuIcon = document.querySelector(".menuIcon");
+var menuLinks = document.querySelectorAll(".menuLink");
+
+ham.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        xIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        xIcon.style.display = "block";
+        menuIcon.style.display = "none";
+    }
+}
+
+menuLinks.forEach(function(menuLink) { 
+    menuLink.addEventListener("click", toggleMenu);
+})
+
+
+
 //TYPEWRITER WORD
 const typeWord = document.getElementById('describe');
 
@@ -27,7 +54,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = () => scrollFunction();
 
 const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
