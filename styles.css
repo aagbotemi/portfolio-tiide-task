@@ -4,15 +4,62 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
     color: #fff;
+}
+
+/* .fa-arrow-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #04c2c9;
+    color: #fff;
+    padding: 15px;
+}
+
+.backToTopButton {
+    background-color: #04c2c9;
+    padding: 30px;
+} */
+
+.fa-arrow-up {
+    margin-right: 4px;
+    font-size: 18px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #04c2c9; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    /* border-radius: 10px; /* Rounded corners */
+    transition: all 1s ease-in-out;
+}
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    transform: rotate(45deg);
+}
+
+#myBtn:hover .fa-arrow-up {
+    transform: rotate(-45deg);
 }
 
 header {
