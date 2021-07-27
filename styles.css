@@ -304,32 +304,43 @@ footer a:not(:last-child){
 
 
 /* contact page */
-
 .contact {
     margin: 0 2.5rem;
+    color: #41415A;
 }
 
 .contact p {
     text-align: center;
     margin-top: 1rem;
-    color: #41415A;
 }
+
+
 form {
     margin-top: 25px;
-    max-width: 450px;
-    color: #41415A;
+    max-width: 400px;
+    width: 100%;
     background: #cecece;
     padding: 35px 20px;
     border-radius: 4px;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.34);
 }
-@media screen and (max-width:575px) {
 
-    form {
-        margin: 25px auto;
-        max-width: 95%;
+.form-image img {
+    display: none;
+}
+
+@media screen and (min-width:675px) {
+    .form-image {
+        display: flex;
+        justify-content: space-around;
+    }
+    .form-image img {
+        display: block;
+        margin-top: 4rem;
+        width: 20rem;
     }
 }
+
 label {
     display: block;
 }
@@ -364,6 +375,7 @@ input, textarea {
     margin-bottom: 3rem;
 }
 .mansory {
+    margin-top: 1.5rem !important;
     max-width: 800px;
     padding: 1rem;
     margin: 0 auto;
