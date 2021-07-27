@@ -18,20 +18,6 @@ a {
     color: #fff;
 }
 
-/* .fa-arrow-up {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #04c2c9;
-    color: #fff;
-    padding: 15px;
-}
-
-.backToTopButton {
-    background-color: #04c2c9;
-    padding: 30px;
-} */
-
 .fa-arrow-up {
     margin-right: 4px;
     font-size: 18px;
@@ -52,7 +38,7 @@ a {
     /* border-radius: 10px; /* Rounded corners */
     transition: all 1s ease-in-out;
 }
-  
+
 #myBtn:hover {
     background-color: #41415A; /* Add a dark-grey background on hover */
     transform: rotate(45deg);
@@ -66,9 +52,9 @@ a {
 
 .ham {
     display: none;
-    
+
     position: fixed;
-    
+
     top: 1rem;
     right: 1rem;
     width: 3rem;
@@ -82,7 +68,7 @@ a {
 .xIcon {
     display: none;
 }
-  
+
 .menu {
     position: fixed;
     top: 0;
@@ -102,7 +88,7 @@ a {
 .showMenu {
     transform: translateY(0);
 }
-  
+
 .ham li {
     padding: 1.5rem 0;
 }
@@ -119,7 +105,7 @@ a {
     color: white;
     text-decoration: none;
 }
-  
+
 .menuLink:hover {
     text-decoration: underline;
 }
@@ -338,7 +324,7 @@ form {
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.34);
 }
 @media screen and (max-width:575px) {
-    
+
     form {
         margin: 25px auto;
         max-width: 95%;
@@ -371,5 +357,58 @@ input, textarea {
 
 .contact button:hover {
     background: #333361;
-    
+}
+
+/* MOMENT AT TIIDELab */
+.moment {
+    margin-bottom: 3rem;
+}
+.mansory {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(10px, auto);
+}
+
+.mansory div img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.a {
+    grid-row: 3/3;
+}
+
+.b {
+    grid-column: 1/3;
+}
+
+@media screen and (max-width: 500px) {
+    .mansory {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(20px, auto);
+        grid-gap: .7rem;
+    }
+    .mansory div img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .a {
+        grid-row: 1 / 3;
+    }
+
+    .b {
+        grid-column: 2 / 3;
+    }
+    .f{
+        grid-column:  1/3;
+    }
 }
