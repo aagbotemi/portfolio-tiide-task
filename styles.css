@@ -48,18 +48,27 @@ a {
     transform: rotate(-45deg);
 }
 
-
+@media only screen and (max-width: 800px) {
+    .hamburger {
+        width: 100vw;
+        height: 48px;
+        background: rgb(19, 36, 65);
+        position: sticky !important;
+        border-bottom: 2px solid #04c2c9;
+        backdrop-filter: blur(10px);
+    }
+}
 
 .ham {
     display: none;
 
     position: fixed;
 
-    top: 1rem;
-    right: 1rem;
+    top: 0rem;
+    right: 0rem;
     width: 3rem;
-    height: 3rem;
-    border: black solid 1px;
+    height: 2.9rem;
+    border: 1px solid #414141;
     background: white;
     cursor: pointer;
     z-index: 1000 !important;
