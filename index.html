@@ -14,142 +14,136 @@
 
 </head>
 <body>
+    <!-- NAVBAR ENDS HERE, KEPT AT THE BOTTOM OF THE HEADER
+    WITH BOTTOM POSITIONING -->
+    <nav id="stickyNav">
+        <!-- <div class='navbar-brand'>GB</div> -->
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hamburger" id="stickyNav">
+        <button class="ham">
+            <span class="menuIcon material-icons">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span class="xIcon material-icons">
+                <i class="fas fa-times"></i>
+            </span>
+        </button>
+        <ul class="menu">
+            <li><a class="menuLink" href="#">Home</a></li>
+            <li><a class="menuLink" href="#about-us">About</a></li>
+            <li><a class="menuLink" href="#project">Projects</a></li>
+            <li><a class="menuLink" href="#contact">Contact</a></li>
+        </ul>
+    </div> 
+    <!-- NAVBAR ENDS HERE-->
     
-            <!-- NAVBAR ENDS HERE, KEPT AT THE BOTTOM OF THE HEADER
-        WITH BOTTOM POSITIONING -->
-        <nav id="stickyNav">
-            <!-- <div class='navbar-brand'>GB</div> -->
+    <!-- HERO STARTS HERE -->
+    <section id="" class="hero">
+        <h2>Hello, I'm <span>Abiodun Awoyemi</span></h2>
+        <p id="describe"></p>
+        <a href="#project" type="button">View my work <i class="fas fa-arrow-right"></i></a>
+        <a style="margin-left: 10px;" href="./images/AbiodunAwoyemiCV.pdf" target="_blank">View my resume</a>
+    </section>
+    <!-- HERO ENDS HERE -->
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-us">About</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- ABOUT SECTION STARTS HERE-->
+    <section id="about-us" class="about">
+        <h3>About Me
+        <div class="underline"></div></h3>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
-         <div class="hamburger" id="stickyNav">
-            <button class="ham">
-                <span class="menuIcon material-icons">
-                  <i class="fas fa-bars"></i>
-                </span>
-                <span class="xIcon material-icons">
-                  <i class="fas fa-times"></i>
-                </span>
-            </button>
-            <ul class="menu">
-                <li><a class="menuLink" href="#">Home</a></li>
-                <li><a class="menuLink" href="#about-us">About</a></li>
-                <li><a class="menuLink" href="#project">Projects</a></li>
-                <li><a class="menuLink" href="#contact">Contact</a></li>
-            </ul>
-        </div> 
-        <!-- NAVBAR ENDS HERE-->
+        <p>I'm a frontend software developer. I'm passionate about making the web accessible to everyone and I enjoy solving complex problems using web technologies as I provide top notch solution that helps to solve human problem.</p>
+        <p>I am a passionate and goal-driven frontend developer looking for an opportunity to apply my highly refined programming skills to help real-life businesses. I am team oriented and get along with others when working in a group setting. I also have the ability to work independently while staying on schedule and meeting those tight deadlines.</p>
+        <p>Below is a list of my current technical skills:</p>
+        <ul>
+            <li><i class="fab fa-html5"></i> </li>
+            <li><i class="fab fa-css3-alt"></i></li>
+            <li><i class="fab fa-js"></i></li>
+            <li><i class="fab fa-bootstrap"></i></li>
+            <li><i class="fab fa-vuejs"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-git"></i></li>
+        </ul>
+    </section>
+    <!-- ABOUT SECTION ENDS HERE-->
 
-        
-    
-        <!-- HERO STARTS HERE -->
-        <section id="" class="hero">
-            <h2>Hello, I'm <span>Abiodun Awoyemi</span></h2>
-            <p id="describe"></p>
-            <button>View my work <i class="fas fa-arrow-right"></i></button>
-            <a style="margin-left: 10px;" href="./images/AbiodunAwoyemiCV.pdf" target="_blank">View my resume</a>
-        </section>
-        <!-- HERO ENDS HERE -->
-
-        <!-- ABOUT SECTION STARTS HERE-->
-        <section id="about-us" class="about">
-            <h3>About Me
+    <section id="project" class="project">
+        <h3>Projects
             <div class="underline"></div></h3>
+        <!-- PROJECT WILL BE HERE-->
+    </section>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-
-            <p>I'm a frontend software developer. I'm passionate about making the web accessible to everyone and I enjoy solving complex problems using web technologies as I provide top notch solution that helps to solve human problem.</p>
-            <p>I am a passionate and goal-driven frontend developer looking for an opportunity to apply my highly refined programming skills to help real-life businesses. I am team oriented and get along with others when working in a group setting. I also have the ability to work independently while staying on schedule and meeting those tight deadlines.</p>
-            <p>Below is a list of my current technical skills:</p>
-            <ul>
-                <li><i class="fab fa-html5"></i> </li>
-                <li><i class="fab fa-css3-alt"></i></li>
-                <li><i class="fab fa-js"></i></li>
-                <li><i class="fab fa-bootstrap"></i></li>
-                <li><i class="fab fa-vuejs"></i></li>
-                <li><i class="fab fa-react"></i></li>
-                <li><i class="fab fa-github"></i></li>
-                <li><i class="fab fa-git"></i></li>
-            </ul>
-        </section>
-        <!-- ABOUT SECTION ENDS HERE-->
-
-        <section id="project" class="project">
-            <h3>Projects
-                <div class="underline"></div></h3>
-            <!-- PROJECT WILL BE HERE-->
-        </section>
-
-        <section id="moment" class="moment">
-            <h3>Moment at TIIDELab
-                <div class="underline"></div></h3>
-            <article class="mansory">
-                <div class="a">
-                    <img src="images/IMG_8815.jpeg">
-                </div>
-                <div class="b">
-                    <img src="images/IMG_0554.jpg">
-                </div>
-                <div class="c">
-                    <img src="images/IMG_8177.jpg">
-                </div>
-                <div class="d">
-                    <img src="images/IMG_0583.jpg">
-                </div>
-                <div class="e">
-                    <img src="images/IMG_0574.jpg">
-                </div>
-                <div class="f">
-                    <img src="images/IMG_8184.jpg">
-                </div>
-                <div class="g">
-                    <img src="images/IMG_8816.jpeg">
-                </div>
-                <div class="h">
-                    <img src="images/IMG_0544.jpg">
-                </div>
-            </article>
-        </section>
-
-        <section id="contact" class="contact">
-            <h3>Contact Me <div class="underline"></div></h3>
-
-            <p>Have a question or want to work together?</p>
-            <div class="form-image">
-                <form>
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input id="name" class="input" type="text" placeholder=" " />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                      <input id="email" class="input" type="email" placeholder=" " />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea rows="4" id="message" class="textarea" placeholder=" " ></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-
-                <div>
-                    <img src="./images/illustration.svg" alt="illustration svg" />
-                </div>
-                 <!-- CONTACT FORM WILL BE HERE-->
+    <section id="moment" class="moment">
+        <h3>Moment at TIIDELab
+            <div class="underline"></div></h3>
+        <article class="mansory">
+            <div class="a">
+                <img src="images/IMG_8815.jpeg">
             </div>
-        
-        </section>
+            <div class="b">
+                <img src="images/IMG_0554.jpg">
+            </div>
+            <div class="c">
+                <img src="images/IMG_8177.jpg">
+            </div>
+            <div class="d">
+                <img src="images/IMG_0583.jpg">
+            </div>
+            <div class="e">
+                <img src="images/IMG_0574.jpg">
+            </div>
+            <div class="f">
+                <img src="images/IMG_8184.jpg">
+            </div>
+            <div class="g">
+                <img src="images/IMG_8816.jpeg">
+            </div>
+            <div class="h">
+                <img src="images/IMG_0544.jpg">
+            </div>
+        </article>
+    </section>
 
+    <section id="contact" class="contact">
+        <h3>Contact Me <div class="underline"></div></h3>
 
+        <p>Have a question or want to work together?</p>
+        <div class="form-image">
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input name="name" class="input" type="text" placeholder=" " />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" class="input" type="email" placeholder=" " />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea rows="4" id="message" class="textarea" placeholder=" " ></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div>
+                <img src="./images/illustration.svg" alt="illustration svg" />
+            </div>
+                <!-- CONTACT FORM WILL BE HERE-->
+        </div>
+    
+    </section>
 
     <!-- FOOTER STARTS HERE-->
     <footer>
@@ -163,14 +157,6 @@
         </p>
     </footer>
     <!-- FOOTER ENDS HERE-->
-
-
-    <script lang="js">
-        // simple JavaScript to set the year
-        const fullYear = document.getElementById('year')
-        const date = new Date()
-        fullYear.innerHTML = date.getFullYear()
-    </script>
 
     <!--typewriter.js-->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>

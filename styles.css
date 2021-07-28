@@ -24,18 +24,17 @@ a {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #04c2c9; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    /* border-radius: 10px; /* Rounded corners */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #04c2c9;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
     transition: all 1s ease-in-out;
 }
 
@@ -102,7 +101,6 @@ a {
 }
 
 .menu li {
-
     display: flex;
     justify-content: center;
 }
@@ -127,7 +125,6 @@ header {
     position: relative;
 }
 
-
 nav {
     width: 100%;
     position: sticky;
@@ -136,7 +133,6 @@ nav {
     padding: 24px;
     border-bottom: 3px solid #04c2c9;
 }
-
 
 nav ul {
     display: flex;
@@ -151,7 +147,6 @@ nav ul li a {
     font-size: 18px;
 }
 
-
 nav ul li a:hover {
     color: #cf1864;
 }
@@ -159,7 +154,7 @@ nav ul li a:hover {
 .hero {
     background: #414141;
     padding-top: 7rem;
-    height: 95vh;
+    height: calc(100vh - 60px);
     text-align: center;
 }
 
@@ -177,7 +172,11 @@ nav ul li a:hover {
     font-weight: lighter;
 }
 
-.hero button, .hero a {
+#describe {
+    margin-bottom: 2.5rem;
+}
+
+.hero a {
     padding: 12px 14px;
     font-size: 16px;
     background: #41415A;
@@ -188,14 +187,12 @@ nav ul li a:hover {
     box-shadow: 4px 4px 0px 0px rgba(250, 250, 250, 0.34);
 }
 
-.hero button:hover, .hero a:hover {
+.hero a:hover {
     background: #fff;
     color: #41415A;
     box-shadow: 4px 4px 0px 0px rgba(250, 250, 250, 0.34);
-    /* box-shadow: 3px 3px 1px 10px rgba(65, 65, 90, 0.34); */
-    
 }
-.hero button:hover .fas {
+.hero a:hover .fas {
     transform: rotate(90deg);
 }
 @media screen and (max-width: 800px){
@@ -206,7 +203,7 @@ nav ul li a:hover {
         display: none ;
     }
     .hero h2 {
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
 }
 .fas {
@@ -308,8 +305,6 @@ footer a {
 footer a:not(:last-child){
     margin-right: 2rem;
 }
-
-
 
 /* contact page */
 .contact {

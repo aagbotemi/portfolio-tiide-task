@@ -18,12 +18,14 @@ function toggleMenu() {
         menuIcon.style.display = "none";
     }
 }
-
 menuLinks.forEach(function(menuLink) { 
     menuLink.addEventListener("click", toggleMenu);
 })
 
-
+// simple JavaScript to set the year
+const fullYear = document.getElementById('year')
+const date = new Date()
+fullYear.innerHTML = date.getFullYear()
 
 //TYPEWRITER WORD
 const typeWord = document.getElementById('describe');
