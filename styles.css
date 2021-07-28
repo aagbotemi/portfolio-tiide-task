@@ -50,22 +50,21 @@ a {
 
 @media only screen and (max-width: 800px) {
     .hamburger {
+        position: fixed;
+        top: 0;
         width: 100vw;
-        height: 48px;
+        height: 60px;
         background: rgb(19, 36, 65);
         position: sticky !important;
         border-bottom: 2px solid #04c2c9;
-        backdrop-filter: blur(10px);
     }
 }
 
 .ham {
     display: none;
-
     position: fixed;
-
-    top: 0rem;
-    right: 0rem;
+    top: 0.3rem;
+    right: 0.7rem;
     width: 3rem;
     height: 2.9rem;
     border: 1px solid #414141;
@@ -130,10 +129,12 @@ header {
 
 
 nav {
-    display: block;
-    position: absolute;
+    /* display: block; */
+    /* position: absolute; */
     width: 100%;
-    bottom: 0;
+    position: sticky;
+    top: 0;
+    /* bottom: 0; */
     /* display: inline-flex;
     justify-content: space-between; */
     background: rgb(19, 36, 65);
@@ -169,6 +170,9 @@ nav ul li a {
 nav ul li a:hover {
     color: #cf1864;
 }
+
+
+
 
 .hero {
     background: #414141;
