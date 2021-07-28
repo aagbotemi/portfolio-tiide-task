@@ -137,17 +137,7 @@ nav {
     border-bottom: 3px solid #04c2c9;
 }
 
-@media screen and (max-width: 800px){
-    .ham {
-        display: block;
-    }
-    nav {
-        display: none ;
-    }
-    .hero h2 {
-        margin-top: 5rem;
-    }
-}
+
 nav ul {
     display: flex;
 }
@@ -187,24 +177,38 @@ nav ul li a:hover {
     font-weight: lighter;
 }
 
-.hero button {
-    padding: 14px 18px;
+.hero button, .hero a {
+    padding: 12px 14px;
     font-size: 16px;
     background: #41415A;
     cursor: pointer;
     color: white;
     border: 1px solid white;
     transition: all 0.6s ease-in-out;
+    box-shadow: 4px 4px 0px 0px rgba(250, 250, 250, 0.34);
 }
 
-.hero button:hover {
+.hero button:hover, .hero a:hover {
     background: #fff;
     color: #41415A;
+    box-shadow: 4px 4px 0px 0px rgba(250, 250, 250, 0.34);
+    /* box-shadow: 3px 3px 1px 10px rgba(65, 65, 90, 0.34); */
+    
 }
 .hero button:hover .fas {
     transform: rotate(90deg);
 }
-
+@media screen and (max-width: 800px){
+    .ham {
+        display: block;
+    }
+    nav {
+        display: none ;
+    }
+    .hero h2 {
+        margin-top: 5rem;
+    }
+}
 .fas {
     font-size: 12px;
     margin-left: 7px;
