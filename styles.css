@@ -129,14 +129,9 @@ header {
 
 
 nav {
-    /* display: block; */
-    /* position: absolute; */
     width: 100%;
     position: sticky;
     top: 0;
-    /* bottom: 0; */
-    /* display: inline-flex;
-    justify-content: space-between; */
     background: rgb(19, 36, 65);
     padding: 24px;
     border-bottom: 3px solid #04c2c9;
@@ -171,9 +166,6 @@ nav ul li a:hover {
     color: #cf1864;
 }
 
-
-
-
 .hero {
     background: #414141;
     padding-top: 7rem;
@@ -196,17 +188,16 @@ nav ul li a:hover {
 }
 
 .hero button {
-    padding: 10px 16px;
+    padding: 14px 18px;
     font-size: 16px;
     background: #41415A;
     cursor: pointer;
     color: white;
     border: 1px solid white;
+    transition: all 0.6s ease-in-out;
 }
 
 .hero button:hover {
-    /* padding: 12px;
-    transform: translateY(10%); */
     background: #fff;
     color: #41415A;
 }
@@ -230,10 +221,10 @@ nav ul li a:hover {
     height: 3px;
     background: #41415A;
     transform: translateX(-30%);
+    transition: all 0.5s ease-in-out;
 }
 h3:hover .underline {
     width:9.5rem;
-
     transform: translateX(0%);
     background: #04C2C9;
 }
