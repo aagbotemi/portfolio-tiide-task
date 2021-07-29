@@ -1,26 +1,26 @@
 // HAMBUEGER MENU
-var menu = document.querySelector(".menu");
-var ham = document.querySelector(".ham");
-var xIcon = document.querySelector(".xIcon");
-var menuIcon = document.querySelector(".menuIcon");
-var menuLinks = document.querySelectorAll(".menuLink");
+// var menu = document.querySelector(".menu");
+// var ham = document.querySelector(".ham");
+// var xIcon = document.querySelector(".xIcon");
+// var menuIcon = document.querySelector(".menuIcon");
+// var menuLinks = document.querySelectorAll(".menuLink");
 
-ham.addEventListener("click", toggleMenu);
+// ham.addEventListener("click", toggleMenu);
 
-function toggleMenu() {
-    if (menu.classList.contains("showMenu")) {
-        menu.classList.remove("showMenu");
-        xIcon.style.display = "none";
-        menuIcon.style.display = "block";
-    } else {
-        menu.classList.add("showMenu");
-        xIcon.style.display = "block";
-        menuIcon.style.display = "none";
-    }
-}
-menuLinks.forEach(function(menuLink) { 
-    menuLink.addEventListener("click", toggleMenu);
-})
+// function toggleMenu() {
+//     if (menu.classList.contains("showMenu")) {
+//         menu.classList.remove("showMenu");
+//         xIcon.style.display = "none";
+//         menuIcon.style.display = "block";
+//     } else {
+//         menu.classList.add("showMenu");
+//         xIcon.style.display = "block";
+//         menuIcon.style.display = "none";
+//     }
+// }
+// menuLinks.forEach(function(menuLink) { 
+//     menuLink.addEventListener("click", toggleMenu);
+// })
 
 // simple JavaScript to set the year
 const fullYear = document.getElementById('year')
@@ -28,24 +28,24 @@ const date = new Date()
 fullYear.innerHTML = date.getFullYear()
 
 //TYPEWRITER WORD
-const typeWord = document.getElementById('describe');
+// const typeWord = document.getElementById('describe');
 
-const typewriter = new Typewriter (typeWord, {
-    loop: true
-});
+// const typewriter = new Typewriter (typeWord, {
+//     loop: true
+// });
 
-typewriter.typeString('I am a frontend Software Developer.')
-    .pauseFor(1500)
-    .deleteAll()
-    .typeString('I turn designs into beautiful & efficient code')
-    .pauseFor(1500)
-    // .deleteChars(7)
-    // .typeString('<strong>I turn designs into beautiful code</strong>')
-    //.pauseFor(1500)
-    .deleteAll()
-    .typeString('I am a content creator')
-    .pauseFor(1500)
-    .start();
+// typewriter.typeString('I am a frontend Software Developer.')
+//     .pauseFor(1500)
+//     .deleteAll()
+//     .typeString('I turn designs into beautiful & efficient code')
+//     .pauseFor(1500)
+//     // .deleteChars(7)
+//     // .typeString('<strong>I turn designs into beautiful code</strong>')
+//     //.pauseFor(1500)
+//     .deleteAll()
+//     .typeString('I am a content creator')
+//     .pauseFor(1500)
+//     .start();
 
 
 
@@ -56,7 +56,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = () => scrollFunction();
 
 const scrollFunction = () => {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
